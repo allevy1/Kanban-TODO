@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="novaTarefa">
+      <h2>Nova tarefa</h2>
+      <label for="tituloNovaTarefa">Título da nova tarefa</label>
+      <input type="text" placeholder="Tarefa" id="tituloNovaTarefa" />
+
+      <label for="descricaoNovaTarefa">Descrição</label>
+      <input
+        type="text"
+        placeholder="Descrição de tarefa"
+        id="descricaoNovaTarefa"
+      />
+      <button id="button">Nova tarefa</button>
+    </div>
+
+    <div class="kanban">
+      <div class="board">
+        <h1>TODO</h1>
+        <div class="column" id="todo"></div>
+      </div>
+
+      <div class="board">
+        <h1>DOING</h1>
+        <div class="column" id="doing"></div>
+      </div>
+
+      <div class="board">
+        <h1>DONE</h1>
+        <div class="column" id="done"></div>
+      </div>
+    </div>
+  </body>
+</html>
