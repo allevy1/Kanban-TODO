@@ -30,6 +30,8 @@ button.addEventListener("click", () => {
 
   localStorage.setItem("todos", JSON.stringify(tarefas));
   createItem(tarefa.Titulo, tarefa.Descricao, "todo");
+  inputDescricao.value = "";
+  inputTitulo.value = "";
 });
 
 function createItem(tituloParametro, descricaoParametro, estado) {
